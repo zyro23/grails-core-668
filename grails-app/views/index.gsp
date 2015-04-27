@@ -77,12 +77,12 @@
         </style>
     </head>
     <body>
-    
+
     	<g:form controller="dummy" action="index" method="post" enctype="multipart/form-data">
-    		<g:field type="file" name="file" />
+    		<g:field type="file" name="file" multiple='multiple'/>
     		<input type="submit" />
     	</g:form>
-    
+
         <a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div id="status" role="complementary">
             <h1>Application Status</h1>
@@ -100,7 +100,7 @@
                 <li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
                 <li>Domains: ${grailsApplication.domainClasses.size()}</li>
                 <li>Services: ${grailsApplication.serviceClasses.size()}</li>
-                <li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>                    
+                <li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
             </ul>
             <h1>Installed Plugins</h1>
             <ul>
